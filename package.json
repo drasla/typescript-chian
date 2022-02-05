@@ -6,10 +6,12 @@
   "repository": "https://github.com/dralsa/typescript-chain",
   "author": "Tae.Garam <drasla@naver.com>",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \"node dist/index.js\""
   },
   "dependencies": {
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.6.0"
   }
 }
